@@ -1,0 +1,131 @@
+body {
+    font-family: 'Handlee', cursive;
+    background-color: #D5AB5F;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2b48c;
+    padding: 10px;
+}
+
+.logo {
+    max-width: 150px;
+}
+.social-nav {
+    margin: 10px 0;
+    margin-right: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+.social-link, .prdutos-link {
+    color: #5c3a21;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+    color: #007bff;
+    transform: translateY(-3px);
+}
+
+.prdutos-link:hover {
+    color: #007bff;
+    transform: translateY(-3px);
+}
+.prdutos-link {
+    text-align: center;
+    background-color: #d2b48c;
+    padding: 10px;
+}
+.prdutos-link a {
+    color: #8b4513;
+    text-decoration: none;
+    margin: 0 10px;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #8b4513;
+}
+.container {
+    width: 100%;
+    display: flex;
+    overflow-x: auto; /*Remove a barra de navegação*/
+    scroll-snap-type: x mandatory;
+    position: relative;
+}
+main {
+    min-width: 10%;
+    text-align: center;
+    scroll-snap-align: start;
+    padding: 25px;
+}
+.card {
+    background: #FBEBB8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+.card img:hover {
+    transform: scale(1.2);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #5c3a21;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.carousel-buttons button {
+    background-color: #5c3a21;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    header {
+        justify-content: flex-start;
+    }
+    .container {
+        overflow: hidden;
+    }
+
+    main {
+        min-width: 75%;
+    }
+}
