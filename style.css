@@ -121,9 +121,6 @@ main {
     header {
         justify-content: flex-start;
     }
-    .container {
-        overflow: hidden;
-    }
 
     main {
         min-width: 75%;
